@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+     int t;
+     cin>>t;
+     while(t--)
+     {
+          int n,m,k;
+          cin>>n>>m>>k;
+          int mi = min(m,n/k);
+          int a = (m-mi+k-2)/(k-1);
+          cout<<mi-a<<endl;
+     }
+}
